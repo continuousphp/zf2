@@ -11,7 +11,6 @@ namespace Zend\Config;
 
 use Zend\Stdlib\ArrayUtils;
 
-
 class Factory
 {
     /**
