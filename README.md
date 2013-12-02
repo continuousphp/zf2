@@ -1,5 +1,7 @@
 ### Welcome to the *Zend Framework 2.2* Release!
 
+Tested by continuousphp !
+
 Master: [![Build Status](https://secure.travis-ci.org/zendframework/zf2.png?branch=master)](http://travis-ci.org/zendframework/zf2)
 Develop: [![Build Status](https://secure.travis-ci.org/zendframework/zf2.png?branch=develop)](http://travis-ci.org/zendframework/zf2)
 
