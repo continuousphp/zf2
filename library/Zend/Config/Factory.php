@@ -10,7 +10,6 @@
 namespace Zend\Config;
 
 use Zend\Stdlib\ArrayUtils;
-use Zend\Debug;
 
 class Factory
 {
