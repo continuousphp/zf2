@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="ZF2" default="build">
-    <target name="travis" depends="tests-parallel,show-test-results" />
 
     <target name="clean" description="Cleanup build artifacts">
         <delete dir="${basedir}/build"/>
@@ -11,27 +10,4 @@
         <mkdir dir="${basedir}/build/cs-results"/>
     </target>
 
-    <target name="composer-install" description="Installs dependencies via composer install">
-        <sequential>
-            <exec executable="composer" failonerror="true">
-                <arg value="self-update" />
-            </exec>
-            <exec executable="composer" failonerror="true">
-                <arg value="--version" />
-            </exec>
-            <exec executable="composer" failonerror="true">
-                <env key="COMPOSER_ROOT_VERSION" value="dev-master"/>
-                <arg value="install" />
-                <arg value="--dev" />
-                <arg value="--prefer-source" />
-            </exec>
-        </sequential>
-    </target>
-
-    <target name="show-test-results" description="Display logged test results">
-        <concat>
-            <fileset dir="${basedir}/build/cs-results/"/>
-            <fileset dir="${basedir}/build/test-results/"/>
-        </concat>
-    </target>
 </project>
